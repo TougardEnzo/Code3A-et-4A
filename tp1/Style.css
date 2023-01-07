@@ -1,0 +1,27 @@
+body{
+    background: linear-gradient(to right, rgb(204, 123, 204),blue,white);
+}
+title{
+    color: violet;
+    text-align: center;
+    font-size: 30;
+    text
+}
+h1{
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+p{
+    color: pink;
+    font-size: 15px;
+    text-align: left;
+}
+table, th, td{
+    border: 1px solid;
+    border-color: solid black;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+.item{
+    float: center;
+}

@@ -1,0 +1,27 @@
+head{
+    font-size: 30px;
+    text-align: center;
+}
+body{
+    background-image: url("imgFleurs/fond.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    font-size: 30px;
+    text-align: center;
+}
+h1{
+    color: blue;
+}
+h2{
+    font-size: 20px;
+    text-align: left;
+    color: black;
+}
+p{
+    float: left;
+    margin: 0 6px 6px 0;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}

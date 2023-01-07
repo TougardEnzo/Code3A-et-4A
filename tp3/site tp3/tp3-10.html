@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p id="panier"></p>
+        <script>
+            const fruits = ["Orange", "Pomme", "Fraise","Kiwi","Figue","Mangue","Ananas","Poire"];
+            const fruits2 = fruits.map(affichetab);
+                document.getElementById("panier").innerHTML = fruits2;
+                function affichetab(fruit,index,map)
+                {
+                    return fruit;
+                }
+            function essai()
+            {
+                const fruits2 = fruits.map(affichetab);
+                document.getElementById("panier").innerHTML = fruits2;
+                function affichetab(value,index,map)
+                {
+                    return value;
+                }
+            }
+            function ajoutfruits()
+            {
+                let nouveauFruit = document.getElementById("buttonAjouter").value;
+                fruits.push(nouveauFruit);
+                essai();
+            }
+            function supprimerFruit()
+            {
+                let mangerFruit = document.getElementById("buttonManger").value;
+                
+                for(i = 0;i<fruits.length;i++)
+                {
+                    if(mangerFruit == fruits[i])
+                    {
+                        fruits.splice(i,1);
+                    }
+                    essai();
+                }
+            }  
+        </script>
+        <input type="text" id="buttonManger">
+        <button type="button" onclick="fruits.supprimerFruit()">manger</button>
+        <input type="text" id="buttonAjouter">
+        <button type="button" onclick="ajoutfruits()">ajouter</button>
+    </body>
+</html>
+
+
+<p><input type="number" id="number1"> + <input type="number" id="number2"> + <input type="number" id="number3"> <button type="button" onclick="">calculer la somme</button> = <input type="number" id="result"></p>

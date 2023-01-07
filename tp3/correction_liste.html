@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <ul id="list">
+        </ul>
+            <input type="text" id="name"><button id="BUTTON">MANGER</button>
+            <input type="text" id="Number"><button id="BUTTON2" >AJOUT</button>        
+        <script>   
+            var fruits = ["Orange", "Pomme", "Fraise","Kiwi","Figue","Mangue","Ananas","Poire"];
+            let button = document.getElementById("BUTTON")
+            let button2 = document.getElementById("BUTTON2")
+            button.onclick = function Suite(){
+            Suppression_de_Fruit()
+            Affiche_Tableau(fruits)
+        }
+            button2.onclick = function Suite2(){
+            Ajout_De_Fruit()
+            Affiche_Tableau(fruits)
+        }
+        function Ajout_De_Fruit(){
+            nouveau = document.getElementById("Number").value;
+            fruits.push(nouveau);
+            alert("Ajout réussi")
+        }
+        function Suppression_de_Fruit(){
+            let Supp = document.querySelector("#name").value
+            for(let i=0; i<fruits.length;i++)
+            {
+                if(Supp == fruits[i]){
+                    fruits.splice(i,1)
+                    alert("Le fruit a été mangé")
+                }
+            }
+        }
+        function Affiche_Tableau(fruits)
+        {
+            document.getElementById("list").innerHTML =" "
+            for(let i=0; i<fruits.length;i++){
+                var ul = document.getElementById("list");
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(fruits[i]));
+                ul.appendChild(li);
+            }
+        }
+        </script>
+    </body>
+</html>

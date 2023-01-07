@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function somme()
+        {
+            const somme = [];
+            somme[0] = document.getElementById("number1").value;
+            somme[1] = document.getElementById("number2").value;
+            somme[2] = document.getElementById("number3").value;
+            var number1 = somme[0];
+            var number2 = somme[1];
+            var number3 = somme[2];
+            var result = parseInt(somme[0], 10)+parseInt(somme[1], 10)+parseInt(somme[2],10);
+            document.getElementById("result").value = result;
+        }
+        </script>
+        <p><input type="number" id="number1"> + <input type="number" id="number2"> + <input type="number" id="number3"> <button type="button" onclick="somme()">calculer la somme</button> = <input value="" id="result"></p>
+    </body>
+</html>

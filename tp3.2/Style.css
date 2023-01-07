@@ -1,0 +1,36 @@
+.carre1{
+    width : 50px;
+    height: 50px;
+    background-color: green;
+    float: left;
+}
+.carre2{
+    width : 50px;
+    height: 50px;
+    background-color: grey;
+    float: left;
+}
+.carre3{
+    width : 50px;
+    height: 50px;
+    background-color: violet;
+    float: left;
+}
+.carrealt1{
+    width : 50px;
+    height: 50px;
+    background-color: red;
+    float: left;
+}
+.carrealt2{
+    width : 50px;
+    height: 50px;
+    background-color: white;
+    float: left;
+}
+.carrealt3{
+    width : 50px;
+    height: 50px;
+    background-color: yellow;
+    float: left;
+}

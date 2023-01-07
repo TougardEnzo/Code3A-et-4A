@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <script>
+            x = 10;
+            var y = 20;
+            function modification()
+            {
+                var x = 30;
+                y = 40;
+            }
+            document.write("Avant : x = "+x+" y ="+y+"<br>");
+            modification();
+            document.write("Après : x = "+x+" y ="+y+"<br>") ;
+        </script>
+        <p id="inner"> c'est quoi le role de la propriété innerHTML</p>
+        <script src="Javascript.js">
+            document.getElementById("inner").innerHTML = "Changer le continu";
+        </script>
+        <p id="demo"></p>
+        <script>
+            let First = prompt();
+            let Second = prompt();
+            let Result = parseInt(First,10) + parseInt(Second,10);
+            document.getElementById("demo").innerHTML ="the result is :" + Result;
+        </script>
+        <p id="alea"></p>
+        <script>
+            let Alea = parseInt(Math.random()*10,10);
+            let lo = prompt("enter your guess");
+            if(Alea == lo)
+            {
+                alert("you won!!!");
+            }
+            else{
+                alert("you lose");
+            }
+            document.getElementById("alea").innerHTML ="the answer was :" + Alea;
+        </script>
+        <p id="quest9"></p>
+        <script>
+            let a = 1;
+            let b= parseInt("2",10);
+            let c = a+b;
+            alert(a,typeof a);
+            alert(b,typeof b);
+            alert(c,typeof c);
+            function addition(a,b,c)
+            {
+                let d = parseInt(a,10) + b + parseInt(c,10);
+                document.write(typeof a);
+                document.write(" " +typeof b);
+                document.write(" " +typeof c);
+                document.write(" the value of d is "+d+" the type of d is :" +typeof d);
+            }
+            addition(a,b,c);
+            document.getElementById("demo")
+        </script>
+    </body>
+</html>
